@@ -54,8 +54,8 @@ int main(int argc, char** argv)
         output << "{" << std::endl;
         for (auto& f : files)
         {
-            output << TAB "\"" << f << "\"" << " = {" << std::endl;
-            output << TAB TAB "src = ./" << name << "/" << f << std::endl;
+            output << TAB "\"" << f << "\"" << " = {" << std::endl;                   
+            output << TAB TAB "src = ./" << name << "/" << f << ";" << std::endl;
             output << TAB "};" << std::endl;
         }
         output << "}";

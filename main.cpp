@@ -45,7 +45,7 @@ int main(int argc, char** argv)
                 auto& p{ ent.path() };
                 if (!ent.is_directory())
                 {
-                    files.push_back("resourcepack/" + p.filename().string());
+                    files.push_back("resourcepacks/" + p.filename().string());
                 }
             }
         }
